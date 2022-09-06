@@ -15,3 +15,4 @@ Forbes methodology: https://www.forbes.com/sites/emmawhitford/2022/08/30/how-we-
 Other questions:
 - Change over time? Previous years?
 - Can you predict Forbes and US News rankings based on WM data by removing unneeded dimensions?
+- Actual vs. reported methodology (using R feature importances as well as machine learning/RandomForestRegressor feature importances)
