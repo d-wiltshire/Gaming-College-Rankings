@@ -19,7 +19,7 @@ rdata_df$Earns.Carnegie.Community.Engagement.Classification. <- lbl$fit_transfor
 #decode_names <- lbl$inverse_transform(rdata_df$Earns.Carnegie.Community.Engagement.Classification.)
 
 
-# IDENTIFY MEANINGFUL CORRELATIONS
+## IDENTIFY MEANINGFUL CORRELATIONS
 
 #create matrix from df
 rdata_matrix <- as.matrix(rdata_df[,c("Rank", "X8.year.graduation.rate", "Graduation.rate.rank", "Predicted.graduation.rate.based.on...of.Pell.recipients..incoming.SATs..etc.", "Graduation.rate.performance.rank", "Pell.non.Pell.graduation.gap", "Pell.graduation.gap.rank", "Number.of.Pell.graduates", "Actual.vs..predicted.Pell.enrollment", "Pell.performance.rank", "Median.earnings.10.years.after.entering.college", "Predicted.median.earnings.10.years.after.entering.college", "Earnings.performance.rank", "Net.price.of.attendance.for.families.below..75.000.income", "Net.price.rank", "X..of.loan.principal.remaining.5.years.later", "Repayment.rank", "Predicted.principal.remaining", "Repayment.rate.performance.rank", "Research.expenditures..in.millions", "Research.expenditures.rank", "Bachelor.s.to.PhD.rank", "Science...engineering.PhDs.awarded", "Science...engineering.PhDs.rank", "Faculty.receiving.significant.awards", "Faculty.in.National.Academies", "Faculty.accolades.rank", "AmeriCorps.Peace.Corps.rank", "ROTC.rank", "X..of.federal.work.study.funds.spent.on.service", "X..of.federal.work.study.funds.spent.on.service.rank", "Earns.Carnegie.Community.Engagement.Classification.", "Voting.engagement.points", "X..of.grads.with.service.oriented.majors", "Service.oriented.majors.rank", "Social.mobility.rank", "Research.rank", "Service.rank")])
@@ -45,8 +45,10 @@ corr_plot <- ggcorrplot(cor(rdata_matrix)) +
 print(corr_plot)
 dev.off()
 
+#generate multiple linear regression model and summary for Rank column
+summary(lm(Rank ~ X8.year.graduation.rate + Graduation.rate.rank + Predicted.graduation.rate.based.on...of.Pell.recipients..incoming.SATs..etc. + Graduation.rate.performance.rank + Pell.non.Pell.graduation.gap + Pell.graduation.gap.rank + Number.of.Pell.graduates + Actual.vs..predicted.Pell.enrollment + Pell.performance.rank + Median.earnings.10.years.after.entering.college + Predicted.median.earnings.10.years.after.entering.college + Earnings.performance.rank + Net.price.of.attendance.for.families.below..75.000.income + Net.price.rank + X..of.loan.principal.remaining.5.years.later + Repayment.rank + Predicted.principal.remaining + Repayment.rate.performance.rank + Research.expenditures..in.millions + Research.expenditures.rank + Bachelor.s.to.PhD.rank + Science...engineering.PhDs.awarded + Science...engineering.PhDs.rank + Faculty.receiving.significant.awards + Faculty.in.National.Academies + Faculty.accolades.rank + AmeriCorps.Peace.Corps.rank + ROTC.rank + X..of.federal.work.study.funds.spent.on.service + X..of.federal.work.study.funds.spent.on.service.rank + Earns.Carnegie.Community.Engagement.Classification. + Voting.engagement.points + X..of.grads.with.service.oriented.majors,data=rdata_df)) 
 
-#multiple linear regression/etc with Rank column
+
 #next: machine learning in python
 #next: join dataframes (lat/long, forbes/etc. rankings) with python
 #show multiple heatmaps relative to ranks for WM, Forbes, USNews
