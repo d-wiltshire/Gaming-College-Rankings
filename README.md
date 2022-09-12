@@ -11,6 +11,8 @@ Forbes: https://www.forbes.com/top-colleges/
 
 Forbes methodology: https://www.forbes.com/sites/emmawhitford/2022/08/30/how-we-rank-americas-top-colleges/?sh=13ffba471b66
 
+US News methodology: https://www.usnews.com/education/best-colleges/articles/how-us-news-calculated-the-rankings
+
 
 Other questions:
 - Change over time? Previous years?
