@@ -18,3 +18,6 @@ Other questions:
 - Change over time? Previous years?
 - Can you predict Forbes and US News rankings based on WM data by removing unneeded dimensions?
 - Actual vs. reported methodology (using R feature importances as well as machine learning/RandomForestRegressor feature importances)
+
+
+Slides in progress: https://docs.google.com/presentation/d/1sIsP8V9POlaAX15FoTc-cSyBhuIiCIckmcTLBudotPE/edit?usp=sharing
