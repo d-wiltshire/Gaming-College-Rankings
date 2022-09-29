@@ -79,7 +79,7 @@ The most significant metrics indicated by Random Forest (and confirmed as signif
 
 "Pell" refers to students receiving Pell grants, which are federal grants given to the lowest-income students. 
 
-The first three items in this list are difficult for a university to change. The first and third refer to student outcomes after the student has graduated. However, the last four are closely correlated to one another and all refer to a university's financial support of its lowest-income students. Therefore, the most direct way to influence a school's rank would be to increase its support of its lowest-income students.
+The first three items in this list are difficult for a university to change. The first and third refer to student outcomes after the student has graduated. However, the last four are closely correlated to one another and all refer to a university's financial support of its lowest-income students. **Therefore, the most direct way to influence a school's rank would be to increase its support of its lowest-income students.**
 
 ![image](https://user-images.githubusercontent.com/100863488/193078590-b503c742-45b3-4e4c-b38b-443f8f73d6fd.png)
 
