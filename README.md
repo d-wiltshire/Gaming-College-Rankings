@@ -2,7 +2,7 @@
 
 ## Summary
 
-The goal of this project was to use supervised machine learning on a college ranking dataset to identify whether some metrics have an out-sized influence on the overall ranks. Put another way: **if we were a college president with money to invest and had the goal of improving our college's ranking, which metrics would offer the best ROI?** 
+The goal of this project was to use supervised machine learning on a college ranking dataset to identify whether some metrics have an outsized influence on the overall ranks. Put another way: **if we were a college president with money to invest and had the goal of improving our college's ranking, which metrics would offer the best ROI?** 
 
 The dataset used was the Fall 2022 Washington Monthly rankings data. The Washington Monthly data <a href="https://washingtonmonthly.com/2022-college-guide/national/">can be found here</a> and is included in the Resources folder of this repository.
 
@@ -34,6 +34,25 @@ I applied Random Forest feature importances and R linear regression statistical 
 ![image](https://user-images.githubusercontent.com/100863488/193073315-19ce937c-84e6-4aa5-84d1-3f7c941d5f5b.png)
 
 The Random Forest feature importances pointed to 88% of the influence coming from the Social Mobility Rank, which was a feature in the Washington Monthly dataset and also a subrank derived from the other social mobility features, like graduation rate. 
+
+The R statistical summary also pointed to an outsized influence coming from the Social Mobility Rank. 
+
+![image](https://user-images.githubusercontent.com/100863488/193074127-1dda9341-c2c4-42e8-b5d6-765c796541d8.png)
+
+
+### Attempting feature reduction with overall rank
+
+I then attempted feature reduction to improve the accuracy of the model and learn more about the influence of various factors. However, all feature reduction attempts resulted in significantly less accurate models. Please view the Jupyter Notebooks available in this repository for more information regarding features removed and the resulting levels of model accuracy.
+
+
+### Social Mobility Rank as target, no feature reduction
+
+The next step was to use the Social Mobility Rank itself as a target to learn more about the feature importances of the social mobility features. The R-squared value was lower for the Random Forest model, but still high enough to be considered significant. Using the Social Mobility Rank as target resulted in a much more even distribution of feature importances, as can be seen in the Random Forest results and R statistical summary:
+
+![image](https://user-images.githubusercontent.com/100863488/193075335-96cfe1e4-882d-41db-b5e1-886fe46604b5.png)
+
+![image](https://user-images.githubusercontent.com/100863488/193075570-783820a5-a9a9-4427-8b13-b61cfeac4f90.png)
+
 
 
 
