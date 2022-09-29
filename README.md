@@ -19,6 +19,15 @@ This project was presented during 2U's September 2022 Demo Day event. The <a hre
   - Decision Tree Regression
   - Support Vector Regression
 
+
+## Context
+
+An explanation of the Washington Monthly methodology <a href="https://washingtonmonthly.com/2022/08/28/a-note-on-methodology-4-year-colleges-and-universities-13/">can be found here</a>. I have represented this visually below:
+
+![image](https://user-images.githubusercontent.com/100863488/193078954-0bb4335c-137e-4fed-811c-2cec7cbcdc8b.png)
+
+This provides the context for comparison to our machine learning model. We may expect that the feature importances shown in our model would reflect the published methodology and assigned weights of various metrics.
+
 ## Process
 
 The data were very clean, so after encoding the single categorical varable, the data were usable for machine learning regression models.
@@ -31,13 +40,15 @@ I first applied the machine learning models using the overall school rank as the
 
 I applied Random Forest feature importances and R linear regression statistical summaries to learn more about how the individual metrics influence the overall rank.
 
-![image](https://user-images.githubusercontent.com/100863488/193073315-19ce937c-84e6-4aa5-84d1-3f7c941d5f5b.png)
+![image](https://user-images.githubusercontent.com/100863488/193075965-04c77766-b3a4-4eba-adaa-56356b7a25dc.png)
 
 The Random Forest feature importances pointed to 88% of the influence coming from the Social Mobility Rank, which was a feature in the Washington Monthly dataset and also a subrank derived from the other social mobility features, like graduation rate. 
 
 The R statistical summary also pointed to an outsized influence coming from the Social Mobility Rank. 
 
 ![image](https://user-images.githubusercontent.com/100863488/193074127-1dda9341-c2c4-42e8-b5d6-765c796541d8.png)
+
+This was highly unexpected relative to the published Washington Monthly methodology and may be explained by hidden correspondences between the various metrics. 
 
 
 ### Attempting feature reduction with overall rank
@@ -54,6 +65,23 @@ The next step was to use the Social Mobility Rank itself as a target to learn mo
 ![image](https://user-images.githubusercontent.com/100863488/193075570-783820a5-a9a9-4427-8b13-b61cfeac4f90.png)
 
 
+## Conclusion
+
+The most significant metrics indicated by Random Forest (and confirmed as significant by R) were: 
+
+- Repayment rate performance rank
+- Graduation rate performance rank
+- Earnings performance rank
+- Net price for incomes under $75,000
+- Net price rank
+- Pell graduation gap rank
+- Pell/non Pell graduation gap 
+
+"Pell" refers to students receiving Pell grants, which are federal grants given to the lowest-income students. 
+
+The first three items in this list are difficult for a university to change. The first and third refer to student outcomes after the student has graduated. However, the last four are closely correlated to one another and all refer to a university's financial support of its lowest-income students. Therefore, the most direct way to influence a school's rank would be to increase its support of its lowest-income students.
+
+![image](https://user-images.githubusercontent.com/100863488/193078590-b503c742-45b3-4e4c-b38b-443f8f73d6fd.png)
 
 
 ## Resources
