@@ -2,7 +2,7 @@
 
 ## Summary
 
-The goal of this project was to use supervised machine learning on a college ranking dataset to identify whether some metrics have an outsized influence on the overall ranks. Put another way: **if we were a college president with money to invest and had the goal of improving our college's ranking, which metrics would offer the best ROI?** 
+The goal of this project was to use supervised machine learning on a college ranking dataset to identify whether any metrics have an outsized influence on the overall ranks. In other words, **if we were a college president with money to invest and had the goal of improving our college's ranking, which metrics would offer the best ROI?** 
 
 The dataset used was the Fall 2022 Washington Monthly rankings data. The Washington Monthly data <a href="https://washingtonmonthly.com/2022-college-guide/national/">can be found here</a> and is included in the Resources folder of this repository.
 
