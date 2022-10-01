@@ -84,22 +84,12 @@ The first three items in this list are difficult for a university to change. The
 ![image](https://user-images.githubusercontent.com/100863488/193078590-b503c742-45b3-4e4c-b38b-443f8f73d6fd.png)
 
 
-## Resources
 
+## Additional information
 
+I also attempted to compare the feature importances between the Washington Monthly dataset and the Fall 2022 US News rankings. US News does not make its dataset freely available to the public, so I added the US News overall rankings in place of the Washington Monthly rankings in the Washington Monthly data and ran the machine learning models. 
 
-An explanation of the Washington Monthly methodology: https://washingtonmonthly.com/2022/08/28/a-note-on-methodology-4-year-colleges-and-universities-13/
+![image](https://user-images.githubusercontent.com/100863488/193418963-0f06d950-bf47-476d-88d3-bcf5e0b1168a.png)
 
-
-Forbes: https://www.forbes.com/top-colleges/
-
-Forbes methodology: https://www.forbes.com/sites/emmawhitford/2022/08/30/how-we-rank-americas-top-colleges/?sh=13ffba471b66
-
-US News methodology: https://www.usnews.com/education/best-colleges/articles/how-us-news-calculated-the-rankings
-
-
-Other questions:
-- Change over time? Previous years?
-- Can you predict Forbes and US News rankings based on WM data by removing unneeded dimensions?
-- Actual vs. reported methodology (using R feature importances as well as machine learning/RandomForestRegressor feature importances)
+The pie chart on the left depics US News' <a href="https://www.usnews.com/education/best-colleges/articles/how-us-news-calculated-the-rankings">published methodology</a>, which is rather different from Washington Monthly's, especially in that academic distinction is given much more weight in US News' rankings. Unsurprisingly, the R-squared value for all the machine learning models (using US News' rankings with Washington Monthly's features) was very low, so the models were not a good fit. 
 
