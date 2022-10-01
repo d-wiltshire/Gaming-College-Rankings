@@ -26,7 +26,7 @@ An explanation of the Washington Monthly methodology <a href="https://washington
 
 ![image](https://user-images.githubusercontent.com/100863488/193078954-0bb4335c-137e-4fed-811c-2cec7cbcdc8b.png)
 
-This provides the context for comparison to our machine learning model. We may expect that the feature importances shown in our model would reflect the published methodology and assigned weights of various metrics.
+This provides the context for comparison to our machine learning model. We may expect that the feature importances shown in our machine learning model would reflect the published methodology and assigned weights of various metrics.
 
 ## Process
 
