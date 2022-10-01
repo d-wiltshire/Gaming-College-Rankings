@@ -34,7 +34,7 @@ The data were very clean, so after encoding the single categorical varable, the 
 
 ### Overall rank as target, no feature reduction
 
-I first applied the machine learning models using the overall school rank as the target, and without removing any usable features. The R-squared values were high, especially for Random Forest and Linear Regression, which lent confidence to the model fit for the data.
+I first applied the machine learning models using the overall school rank as the target, without removing any usable features. The R-squared values were high, especially for Random Forest and Linear Regression, which lent confidence to the model fit for the data.
 
 ![image](https://user-images.githubusercontent.com/100863488/193072826-04888e78-b73b-417e-9ccb-a3a5728aee40.png)
 
