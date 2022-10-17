@@ -83,6 +83,7 @@ The first three items in this list are difficult for a university to change. The
 
 ![image](https://user-images.githubusercontent.com/100863488/193078590-b503c742-45b3-4e4c-b38b-443f8f73d6fd.png)
 
+![whitespace-large](https://user-images.githubusercontent.com/100863488/196213563-5e57ab62-4699-46d6-82c4-5c22f3874831.png)
 
 
 ## Additional information
