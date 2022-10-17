@@ -55,6 +55,4 @@ summary(lm(Rank ~ X8.year.graduation.rate + Graduation.rate.rank + Predicted.gra
 #generate multiple linear regression model. target = Social Mobility Rank; features are all features under Social Mobility heading)
 summary(lm(Social.mobility.rank ~ X8.year.graduation.rate + Graduation.rate.rank + Predicted.graduation.rate.based.on...of.Pell.recipients..incoming.SATs..etc. + Graduation.rate.performance.rank + Pell.non.Pell.graduation.gap + Pell.graduation.gap.rank + Number.of.Pell.graduates + Actual.vs..predicted.Pell.enrollment + Pell.performance.rank + Median.earnings.10.years.after.entering.college + Predicted.median.earnings.10.years.after.entering.college + Earnings.performance.rank + Net.price.of.attendance.for.families.below..75.000.income + Net.price.rank + X..of.loan.principal.remaining.5.years.later + Repayment.rank + Predicted.principal.remaining + Repayment.rate.performance.rank,data=rdata_df)) 
 
-#inteprtation of summary: https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
-#next: join dataframes (lat/long, forbes/etc. rankings) with python
-#show multiple heatmaps relative to ranks for WM, Forbes, USNews
+
